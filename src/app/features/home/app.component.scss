@@ -1,0 +1,87 @@
+:host {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper {
+	height: 100%;
+	width: 100%;
+	color: white;
+
+	.content {
+		height: 100%;
+		width: 100%;
+	}
+
+  .info-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    .logo-img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    }
+
+    .my-info {
+      flex: 1;
+      height: 100%;
+      width: 100%;
+      padding-top: 100px;
+      padding-left: 50px;
+
+      display: flex;
+      flex-direction: column;
+
+      .welcome-text {
+        color: whitesmoke;
+        font-size: 65px;
+        font-weight: semibold;
+      }
+
+      .introduction {
+        padding-left: 10px;
+        border-left: 1px solid aquamarine;
+      }
+    }
+  }
+
+  .project-section {
+    height: 100%;
+    width: 100%;
+    padding-top: 100px;
+    padding-left: 50px;
+
+    .section-title {
+      color: whitesmoke;
+      font-size: 25px;
+      font-weight: semibold;
+    }
+
+    .project-list {
+      padding-left: 20px;
+      border-left: 2px solid white;
+
+      li {
+        text-decoration: none;
+        list-style: none;
+        font-size: 18px;
+
+        a {
+          text-decoration: none;
+          color: beige;
+
+          &:hover {
+            color: aquamarine;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
