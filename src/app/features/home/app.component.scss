@@ -19,22 +19,16 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    animation: 2s left-in;
 
-    .logo-img {
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    }
 
     .my-info {
-      flex: 1;
-      height: 100%;
-      width: 100%;
-      padding-top: 100px;
-      padding-left: 50px;
-
       display: flex;
       flex-direction: column;
+      padding-left: 50px;
+
 
       .welcome-text {
         color: whitesmoke;
@@ -49,39 +43,44 @@
     }
   }
 
-  .project-section {
+  .avatar-section {
     height: 100%;
     width: 100%;
-    padding-top: 100px;
-    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    animation: 2s right-in;
 
-    .section-title {
-      color: whitesmoke;
-      font-size: 25px;
-      font-weight: semibold;
+    img {
+      width: 200px;
+      border-radius: 50%;
+      aspect-ratio: 1 / 1;
     }
 
-    .project-list {
-      padding-left: 20px;
-      border-left: 2px solid white;
-
-      li {
-        text-decoration: none;
-        list-style: none;
-        font-size: 18px;
-
-        a {
-          text-decoration: none;
-          color: beige;
-
-          &:hover {
-            color: aquamarine;
-          }
-        }
-      }
+    p {
+      font-size: 25px;
+      font-weight: semibold;
     }
   }
 }
 
+@keyframes left-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
+@keyframes right-in {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
