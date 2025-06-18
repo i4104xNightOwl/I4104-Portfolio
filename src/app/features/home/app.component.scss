@@ -23,12 +23,10 @@
     align-items: center;
     animation: 2s left-in;
 
-
     .my-info {
       display: flex;
       flex-direction: column;
       padding-left: 50px;
-
 
       .welcome-text {
         color: whitesmoke;
@@ -39,6 +37,7 @@
       .introduction {
         padding-left: 10px;
         border-left: 1px solid aquamarine;
+        font-size: 18px;
       }
     }
   }
@@ -63,24 +62,6 @@
       font-size: 25px;
       font-weight: semibold;
     }
-  }
-}
-
-@keyframes left-in {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes right-in {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
   }
 }
 
