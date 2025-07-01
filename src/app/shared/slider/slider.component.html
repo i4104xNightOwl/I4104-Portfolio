@@ -1,0 +1,8 @@
+<div class="slider-container">
+  <div class="slider" #slider>
+    <ng-content></ng-content>
+  </div>
+
+  <button class="nav prev" (click)="moveSlide(-1)">&#10094;</button>
+  <button class="nav next" (click)="moveSlide(1)">&#10095;</button>
+</div>
